@@ -1,0 +1,1 @@
+{"statusCode": 200, "message": "FX ingestion successful", "bucket": "data-hackathon-smit-taha", "key": "raw/fx/2026/10/24/210154.json", "record_count": 6, "rates": {"PKR": 276.527559, "SAR": 3.75325, "AED": 3.6725, "GBP": 0.747692, "EUR": 0.892538, "INR": 94.94655}}

@@ -1,0 +1,22 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowS3Publish",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "s3.amazonaws.com"
+      },
+      "Action": "SNS:Publish",
+      "Resource": "arn:aws:sns:us-east-1:619183773524:hcm-raw-events",
+      "Condition": {
+        "StringEquals": {
+          "aws:SourceAccount": "619183773524"
+        },
+        "ArnLike": {
+          "aws:SourceArn": "arn:aws:s3:::data-hackathon-smit-taha"
+        }
+      }
+    }
+  ]
+}

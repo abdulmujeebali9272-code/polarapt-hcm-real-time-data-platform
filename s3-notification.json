@@ -1,0 +1,21 @@
+{
+  "TopicConfigurations": [
+    {
+      "Id": "RawDataObjectCreated",
+      "TopicArn": "arn:aws:sns:us-east-1:619183773524:hcm-raw-events",
+      "Events": [
+        "s3:ObjectCreated:*"
+      ],
+      "Filter": {
+        "Key": {
+          "FilterRules": [
+            {
+              "Name": "prefix",
+              "Value": "raw/"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
